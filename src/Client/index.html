@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                
+                <input type="file" id="file" class="inputfile">
+                <label for="file">
+                    <span id="filemessage">Выберите файл…</span>
+                </label>
+                
+            </div>
+            <div id="maincanvas"></div>
+            <div class="side-section">
+                <span>Масштаб</span>
+                <input id="scale-select" type="range" min="20" max="70" step="1" value="45"> 
+                <p class="info">Одно деление равняется расстоянию в один километр.<br/>
+                    Время прохождения сигнала измеряется в миллисекундах.</p>
+                <div id="coordinates"><span></span></div>
+            </div>
+        </div>
+    </body>
+</html>

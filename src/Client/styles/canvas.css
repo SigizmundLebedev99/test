@@ -1,0 +1,22 @@
+.axis path, .axis line {
+    fill: none;
+    stroke: #333;
+}
+.axis .grid-line {
+    stroke: #000;
+    shape-rendering: crispedges;
+    stroke-opacity: 0.2;
+}
+.axis text {
+    font: 10px Verdana;
+}
+
+.dot {
+    stroke: teal;
+    fill: steelblue;
+}
+
+.red{
+    stroke: black;
+    fill: rgb(182, 3, 3);
+}
