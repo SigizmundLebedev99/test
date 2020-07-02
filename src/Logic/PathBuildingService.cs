@@ -12,7 +12,7 @@ namespace test.Logic{
         const double ACCURACY = 0.05;
         public Result BuildPath(Report report){
             var result = report.Dimensions
-            //.AsParallel()
+            .AsParallel()
             .Select(a=>{
                 var (d1,d2,d3) = a;
                 var c1 = (report.Transmitter1.X, report.Transmitter1.Y, TimeToRadius(d1));
