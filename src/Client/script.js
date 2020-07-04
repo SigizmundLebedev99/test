@@ -9,15 +9,17 @@ var coordinates = null;
 
 function redraw(){
     canvasState = fillCanvas(scale.value);
-    handleCoordinates(coordinates, canvasState);
+    if(coordinates)
+        handleCoordinates(coordinates, canvasState);
 }
 
 let scale = document.getElementById("scale-select");
-scale.onchange = redraw
 
-window.onresize = redraw
+scale.onchange = redraw;
+
+window.onresize = redraw;
 
 setCallback((data) => {
     coordinates = data;
-    handleCoordinates(data, canvasState)
+    redraw();
 });

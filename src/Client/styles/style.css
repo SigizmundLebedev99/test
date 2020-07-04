@@ -42,6 +42,10 @@ input{
     margin-right: 14px;
 }
 
+#coordinates{
+    padding-bottom: 20px;
+}
+
 #maincanvas{
     display:block;
     grid-row: 2;
